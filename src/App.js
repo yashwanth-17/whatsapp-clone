@@ -3,14 +3,15 @@ import "./App2.css";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import Home from "./pages/Home";
-import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
+import { HashRouter, Redirect, Route, Switch } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { auth } from "./firebase";
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
+    setLoading(true);
     const unsubscribe = auth.onAuthStateChanged((user) => {
       setLoading(false);
       setLoggedIn(user !== null);
@@ -19,7 +20,7 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Switch>
         {loggedIn && <Route exact path="/" component={Home} />}
         {!loggedIn && <Route exact path="/login" component={Login} />}
@@ -29,7 +30,7 @@ function App() {
         )}
         <Redirect exact to={loading ? "/loading" : loggedIn ? "/" : "login"} />
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
