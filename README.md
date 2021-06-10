@@ -18,24 +18,31 @@ This project is a clone of Whatsapp web.
 ## Screenshots
 
 - Login Screen
+
 ![Login Screen](https://github.com/yashwanth-17/whatsapp-clone/blob/master/screenshots/login%20screen.png?raw=true)
 
 - Signup Screen
+
 ![Signup Screen](https://github.com/yashwanth-17/whatsapp-clone/blob/master/screenshots/signup%20screen.png?raw=true)
 
 - Send Message
+
 ![Send Message](https://github.com/yashwanth-17/whatsapp-clone/blob/master/screenshots/send%20message.png?raw=true)
 
 - Chat Screen
+
 ![Chat Screen](https://github.com/yashwanth-17/whatsapp-clone/blob/master/screenshots/chat%20screen.png?raw=true)
 
 - More Options
+
 ![More Options](https://github.com/yashwanth-17/whatsapp-clone/blob/master/screenshots/more%20options.png?raw=true)
 
 - Account Info
+
 ![Account Info](https://github.com/yashwanth-17/whatsapp-clone/blob/master/screenshots/account%20info.png?raw=true)
 
 - Group Info
+
 ![Group Info](https://github.com/yashwanth-17/whatsapp-clone/blob/master/screenshots/group%20info.png?raw=true)
   
 ## Tech Stack
